@@ -23,7 +23,7 @@ catch (err) {
 
 ### After
 ```ts
-import { tri } from "try2";
+import { tri } from "try-v2";
 
 const [err, result] = await tri(someAsyncFunction());
 
@@ -48,7 +48,7 @@ yarn add try2
 ### Promises
 ```ts
 // async by default
-import { tri } from "try2";
+import { tri } from "try-v2";
 
 // using a function that returns a resolved Promise<string>
 const [err1, result1] = await tri(() => Promise.resolve("hello"));
@@ -85,7 +85,7 @@ typeof result2
 
 ### Sync
 ```ts
-import { triSync } from "try2";
+import { triSync } from "try-v2";
 
 const [err1, result1] = await triSync(() => throw new Error("error"));
 
