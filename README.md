@@ -104,5 +104,5 @@ typeof result1
 
 
 ## Documentation
-Sorry, no docs. Read [Examples](#examples). Or the 
+Sorry, no docs. Read [Examples](#examples). Or the 17 lines of code.
 
