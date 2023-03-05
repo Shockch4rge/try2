@@ -1,5 +1,5 @@
 {
-  "name": "try2",
+  "name": "try-v2",
   "version": "1.0.0",
   "description": "Try/catch in a concise way.",
   "main": "./dist/index.js",
