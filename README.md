@@ -27,6 +27,7 @@ catch (err) {
 import { tri } from "try-v2";
 
 const [err, result] = await tri<TypeError>(someAsyncFunction());
+// defaults to Error, but you can specify the error type 
 
 if (err) {
     console.log(err.message);
@@ -40,9 +41,9 @@ if (err) {
 
 ## Install
 ```shell
-npm i try2
-pnpm i try2
-yarn add try2
+npm i try-v2
+pnpm i try-v2
+yarn add try-v2
 ```
 
 ## Examples
