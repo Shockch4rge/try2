@@ -14,7 +14,8 @@ try {
     result = await someAsyncFunction();
 } 
 catch (err) {
-    // handle error
+    // depending on your tsconfig, `err` may be `any` or `unknown`
+    console.log((err as Error).message);
     return;
 }
 
@@ -25,10 +26,11 @@ catch (err) {
 ```ts
 import { tri } from "try-v2";
 
-const [err, result] = await tri(someAsyncFunction());
+const [err, result] = await tri<TypeError>(someAsyncFunction());
 
 if (err) {
-    // handle error
+    console.log(err.message);
+    // TypeError
     return;
 }
 
