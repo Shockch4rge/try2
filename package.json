@@ -1,7 +1,7 @@
 {
   "name": "try-v2",
   "version": "1.0.0",
-  "description": "Try/catch in a concise way.",
+  "description": "try/catch but better.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
